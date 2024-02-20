@@ -111,3 +111,38 @@ python3 -m pip install ipython
 ipython
 In [1]:
 ```
+
+## Formatação (Strings)
+
+<pyformat.info>
+
+Interpolação: \
+Criar um Template com conjunto de itens a substituir por variáveis.
+```
+%s string
+%d digito
+%f float
+```
+
+Nomear os itens para facilitar.
+```
+%(nome)s
+%(qtde)d
+%(valor)f
+```
+
+Casas antes da virgula.
+```
+%(qtde)03d
+```
+
+Duas casas decimais.
+```
+%(valor).2f 
+```
+
+Exibindo e substituindo os valores.
+```
+var_template % ("Juliano",25,100.023)
+var_template % ({"nome":"Juliano","qtde":25,"valor":100.023})
+```
