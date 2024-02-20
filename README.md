@@ -23,6 +23,7 @@ import os
 ## Terminal (interpretador)
 ```
 python3
+ipython ## Deve instalar com o pip
 ```
 
 ## Help
@@ -104,9 +105,9 @@ python3 -m pip install pacote
 Interpretator mais poderoso (color, autocomplete, help, etc)
 ```
 python3 -m pip install ipython
-ipython
 ```
 
 ```
+ipython
 In [1]:
 ```
