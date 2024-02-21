@@ -20,10 +20,6 @@ __license__ = "Unlicense"
 # Tabuada
 numeros = list(range(1,11))
 
-# Template
-# %s string
-# %d digito
-# %f float
 msg = "Numero %s x %s = "
 
 for numero in numeros:

@@ -112,12 +112,10 @@ ipython
 In [1]:
 ```
 
-## Formatação (Strings)
+## Formatação (Interpolação ou Concatenação) (Old-style)
 
 <pyformat.info>
 
-Interpolação: \
-Criar um Template com conjunto de itens a substituir por variáveis.
 ```
 %s string
 %d digito
@@ -146,3 +144,52 @@ Exibindo e substituindo os valores.
 var_template % ("Juliano",25,100.023)
 var_template % ({"nome":"Juliano","qtde":25,"valor":100.023})
 ```
+
+### Quando utilizar:
+
+Logging (biblioteca muito antiga)
+
+## Formatação (str.format) (New-style)
+
+Um pouco mais simples, será utilizado o {} no lugar do %s, %d, etc.
+
+```
+mensagem = "Olá, {}. Você é o player número {} e você tem {} pontos."
+mensagem = "Olá, {}. Você é o player número {:03d} e você tem {:.3f} pontos."
+```
+
+```
+mensagem.format("Juliano",25,1250.10)
+```
+
+Nomear os itens:
+```
+mensagem = "Olá, {nome}. Você é o player número {numero} e você tem {pontos} pontos."
+```
+```
+mensagem.format(nome="Juliano",numero=25,pontos=1250.10)
+```
+
+### Quando utilizar:
+
+Mensagens longas, email.
+
+## Formatação (f string)
+
+Utiliza-se a partir de variáveis.\
+Defina a variável antes.
+```
+nome = "Juliano"
+valor = 25
+```
+
+Exibindo no texto:
+```
+f"Ola {nome}, você tem {valor} anos."
+f"Ola {nome}, você tem {valor:.2f} reais de saldo."
+```
+
+### Quando utilizar:
+
+Mensagens, Exibição, Erros, etc.
+
