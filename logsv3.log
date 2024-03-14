@@ -1,0 +1,5 @@
+2024-03-14 16:22:05,013 app-logs DEBUG l:36 f:logsV3.py: Mensagem para Dev
+2024-03-14 16:22:05,013 app-logs INFO l:37 f:logsV3.py: Mensagem geral para usuários
+2024-03-14 16:22:05,013 app-logs WARNING l:38 f:logsV3.py: Mensagem de aviso que não causa erro
+2024-03-14 16:22:05,013 app-logs ERROR l:39 f:logsV3.py: Erro que afeta uma unica execução
+2024-03-14 16:22:05,013 app-logs CRITICAL l:40 f:logsV3.py: Erro geral, afeta todo o sistema
