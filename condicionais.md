@@ -41,3 +41,4 @@ O interessante é ver como os operadores lógicos and e or podem ser usados para
 
 
 <https://pythontutor.com/>
+
